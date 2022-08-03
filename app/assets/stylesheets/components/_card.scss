@@ -24,6 +24,8 @@
   background: white;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   width: 500px;
+  height: 300px;
+  position: relative;
 }
 
 .card-movie > img {
@@ -41,7 +43,7 @@
 .card-movie p {
   font-size: 12px;
   opacity: .7;
-  margin: 0;
+  margin-bottom: 20px;
 }
 
 
@@ -50,12 +52,18 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  position: relative;
 }
 
 .card-movie .card-movie-btn {
   position: absolute;
   right: 16px;
+  bottom: 0px;
   text-decoration: none;
   color: red;
+}
+
+.card-movie .card-movie-comment {
+  position: absolute;
+  left: 16px;
+  bottom: 0px;
 }

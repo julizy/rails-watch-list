@@ -13,8 +13,11 @@
           <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
           <div class="card-movie-infos">
             <div>
-              <h2><%= bookmark.movie.title %></h2>
-              <p><%= bookmark.comment %></p>
+              <h2><%= bookmark.movie.title %>⭐<%= bookmark.movie.rating %></h2>
+              <p><%= bookmark.movie.overview %></p>
+            </div>
+            <div class="card-movie-comment">
+              <h2>"<%= bookmark.comment %></h2>
             </div>
             <%= link_to "Delete",
               bookmark_path(bookmark),
