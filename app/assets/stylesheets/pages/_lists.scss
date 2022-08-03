@@ -8,29 +8,10 @@
   padding: 0px !important;
 }
 
-.list-items {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 20px;
-  align-items: center;
-}
-
 .list-item {
   text-decoration: none;
   color: white;
    &:hover {
     color: lightgray;
    }
-}
-
-@media(max-width: 1445px) {
-  .list-items {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media(max-width: 768px) {
-  .list-items {
-    grid-template-columns: 1fr;
-  }
 }
