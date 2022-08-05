@@ -8,7 +8,6 @@ class BookmarksController < ApplicationController
   def create
     @bookmark = Bookmark.new(bookmark_params)
     @bookmark.list = @list
-    @bookmark.save
     if @bookmark.save
       redirect_to list_path(@list)
     else
