@@ -10,8 +10,10 @@
       <ul>
         <div class="list-items">
           <% @lists.each do |list| %>
-            <div class="card">
-              <li><%= link_to list.name, list_path(list), class: "list-item" %></li>
+            <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path list.photo.key %>')">
+              <li>
+                <%= link_to list.name, list_path(list), class: "list-item" %>
+              </li>
             </div>
           <% end %>
         </div>
