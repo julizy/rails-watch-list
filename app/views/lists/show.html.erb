@@ -10,7 +10,7 @@
     <div class="list-items">
       <% @list.bookmarks.each do |bookmark| %>
         <div class="card-movie">
-          <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
+          <%= image_tag(bookmark.movie.poster_url) %>
           <div class="card-movie-infos">
             <div>
               <h2><%= bookmark.movie.title %>⭐<%= bookmark.movie.rating %></h2>
